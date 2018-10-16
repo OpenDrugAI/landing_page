@@ -26,7 +26,7 @@
   <carousel class="deck container-fluid">
     <!--slide class="row-fluid">
       <div class="col-sm-3">
-        <h3>Hetionet in Neo4j</h3>
+        <h3>knowledge graph in Neo4j</h3>
         <p class="lead">Information</p>
 			<!dl>
 				
@@ -47,7 +47,7 @@
 
 <slide class="row-fluid">
   <div class="col-sm-12">
-    <h3>Hetionet in Neo4j</h3>
+    <h3>Netwrok Biology Knowledge Graph with Neo4j</h3>
     <br>
     <div>
       <div class="col-lg-3 ng-scope">
@@ -56,22 +56,21 @@
 
    <h4>Knowledge Graph</h4>
    <div class="paragraph">
-<p>Here is a network of biology, disease, and pharmacology. Knowledge from millions of biomedical studies over the last half century have been encoded into a single heterogenous network heterogenous network. It spans 47,031 nodes of 11 types and 2,250,197 relationships of 24 types.</p>
+<p>Here is a example network of -omics, disease, and pharmacological effects for you to explore. Knowledge from millions of biomedical studies over the last half century have been encoded into a single heterogenous network heterogenous network. It spans 86k nodes of 15 types and 3 million links of 28 types.</p>
 </div>
 <div class="paragraph">
-<p>We created for building knowledge graph where we systematically looked at why drugs work and predicted new uses for existing drugs.</p>
+<p>We build a truly vast and versatile knowledge graph where we can systematically looked into drug MOA (Mechnism of Action) and predict new uses for exisiting drug and predict targets for bioactive compounds.</p>
 </div>
 </div>
 <div class="col-lg-3 ng-scope">
 
 
-
    <h4>Neo4j</h4>
    <div class="paragraph">
-<p>Neo4j is a database designed for heterogenous network . You¡¯re currently interacting with Hetionet through the Neo4j Browser, which provides a web interface to the database. This is a read-only instance, so you can¡¯t modify the network. However, you can run queries and and explore the network.</p>
+<p>Neo4j, a popular graph databases, is well-suited for analyzing interconnections, which is why there has been a lot of interest in using graph databases to store and mining network structured data. You are currently interacting with a part of our knowledge graph through the Neo4j Browser, which provides a web interface to the database. </p>
 </div>
 <div class="paragraph">
-<p>If you are new to Neo4j, check out the following guides:</p>
+<p>You must be new to Neo4j, it's intuitive and easy, please take time to check out the following guides:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -82,7 +81,7 @@
 <p><a play-topic="cypher">Cypher</a></p>
 </li>
 <li>
-<p><a play-topic="intro">Browser Intro</a></p>
+<p><a play-topic="intro">Browser</a></p>
 </li>
 </ul>
 </div>
@@ -95,7 +94,7 @@
 
 <slide class="row-fluid">
   <div class="col-sm-12">
-    <h3>Explore Hetionet</h3>
+    <h3>Explore the Graph</h3>
     <br>
     <div>
       <div class="col-lg-3 ng-scope">
@@ -120,9 +119,9 @@ ORDER BY count DESC<!--/code--></pre>
 
 
 
-   <h4>Relationship type counts</h4>
+   <h4>Link type counts</h4>
    <div class="paragraph">
-<p>Play the following query to count the number of relationships per type.</p>
+<p>Play the following query to count the number of links per type.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -141,7 +140,7 @@ ORDER BY count DESC<!--/code--></pre>
 
 
 
-   <h4>Random relationships</h4>
+   <h4>Random links</h4>
    <div class="paragraph">
 <p>The following query retrieves a random relationship of each type. The query goes through every relationship and thus may take several seconds.</p>
 </div>
@@ -154,7 +153,7 @@ RETURN startNode(rel), rel, endNode(rel)<!--/code--></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>By default, the Hetionet Neo4j Browser only shows relationships that were returned by the query.
+<p>By default, the knowledge graph Neo4j Browser only shows links that were returned by the query.
 To show every relationship between the displayed nodes instead, select <code>Connect result nodes</code> under settings.</p>
 </div>
 </div>
@@ -166,11 +165,11 @@ To show every relationship between the displayed nodes instead, select <code>Con
 
 <slide class="row-fluid">
   <div class="col-sm-12">
-    <h3>Project Rephetio</h3>
+    <h3>A Case</h3>
     <br>
     <div>
       <div class="paragraph">
-<p>Project Rephetio uses Hetionet to predict the probability that each compound treats each disease. The approach uses hetnet edge prediction â€&#65533; an algorithm that learns which types of paths occur more frequently between known treatments. Use the <a href="http://het.io/repurpose/">Prediction Browser</a> to browse the predicted probabilities of treatment for 209,168 compoundâ€“disease pairs.</p>
+<p>We can use knowledge graph to predict the probability that each compound treats each disease. The approach uses hetnet edge prediction; an algorithm that learns which types of paths occur more frequently between known treatments. </p>
 </div>
 <div class="paragraph">
 <p>Each prediction has a corresponding Neo4j guide, which provides additional details and visualization. For example, play the following commands to see the evidence for</p>
@@ -178,10 +177,10 @@ To show every relationship between the displayed nodes instead, select <code>Con
 <div class="ulist">
 <ul>
 <li>
-<p><strong>bupropion for nicotine dependence</strong> (<a href="https://think-lab.github.io/d/203/#8">read more</a>):</p>
+<p><strong>bupropion for nicotine dependence</strong>:</p>
 <div class="listingblock">
 <div class="content">
-<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="cypher" lang="cypher"><!--code class="cypher language-cypher"-->:play https://neo4j.het.io/guides/rep/DB01156/DOID_0050742.html<!--/code--></pre>
+<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="cypher" lang="cypher"><!--code class="cypher language-cypher"-->:play https://opendrugai.com/DOID_0050742.html<!--/code--></pre>
 </div>
 </div>
 </li>
@@ -189,7 +188,7 @@ To show every relationship between the displayed nodes instead, select <code>Con
 <p><strong>clofarabine treating multiple sclerosis</strong> (<a href="https://think-lab.github.io/d/203/#13">read more</a>):</p>
 <div class="listingblock">
 <div class="content">
-<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="cypher" lang="cypher"><!--code class="cypher language-cypher"-->:play https://neo4j.het.io/guides/rep/DB00631/DOID_2377.html<!--/code--></pre>
+<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="cypher" lang="cypher"><!--code class="cypher language-cypher"-->:play https://opendrugai.com/DOID_2377.html<!--/code--></pre>
 </div>
 </div>
 </li>
@@ -197,7 +196,7 @@ To show every relationship between the displayed nodes instead, select <code>Con
 <p><strong>nortriptyline treating migraine</strong> (<a href="https://think-lab.github.io/d/203/#7">read more</a>):</p>
 <div class="listingblock">
 <div class="content">
-<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="cypher" lang="cypher"><!--code class="cypher language-cypher"-->:play https://neo4j.het.io/guides/rep/DB00540/DOID_6364.html<!--/code--></pre>
+<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="cypher" lang="cypher"><!--code class="cypher language-cypher"-->:play https://opendrugai.com/DOID_6364.html<!--/code--></pre>
 </div>
 </div>
 </li>
@@ -211,11 +210,11 @@ To show every relationship between the displayed nodes instead, select <code>Con
 
 <slide class="row-fluid">
   <div class="col-sm-12">
-    <h3>Learn how to query Hetionet using Cypher</h3>
+    <h3>Learn how to query knowledge graph using Cypher</h3>
     <br>
     <div>
       <div class="paragraph">
-<p>Here are some simple queries to help new users get acquainted with Cypher and Hetionet.</p>
+<p>Here are some simple queries to help new users get acquainted with Cypher and knowledge graph.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -291,89 +290,6 @@ RETURN path<!--/code--></pre>
 </div>
 </li>
 </ol>
-</div>
-<div class="paragraph">
-<p>For more advanced examples, see our <a href="https://doi.org/10.15363/thinklab.d220">query depot</a>.</p>
-</div>
-	</div>
-  </div>
-</slide>
-
-
-
-<slide class="row-fluid">
-  <div class="col-sm-12">
-    <h3>Miscellany</h3>
-    <br>
-    <div>
-      
-
-
-   <h4>Style</h4>
-   <div class="paragraph">
-<p>Execute this command to load the hetionet style. Once the style is loaded, the node coloring in the browser will match the metagraph from the first slide in this guide. This command only needs to be run once per web browser.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding"><!--code-->:style https://neo4j.het.io/guides/graphstyle.grass<!--/code--></pre>
-</div>
-</div>
-
-
-
-   <h4>Hosting</h4>
-   <div class="paragraph">
-<p><a href="https://neo4j.het.io/"><strong>neo4j.het.io</strong></a> is hosted on <a href="https://www.digitalocean.com/">DigitalOcean</a> (<a href="https://doi.org/10.15363/thinklab.d216">learn more</a>). We¡¯d like to thanks DigitalOcean for their sponsorship of the Hetionet Browser.</p>
-</div>
-	</div>
-  </div>
-</slide>
-
-
-
-<slide class="row-fluid">
-  <div class="col-sm-12">
-    <h3>Querying Hetionet from Python</h3>
-    <br>
-    <div>
-      <div class="paragraph">
-<p>We allow users to programmatically query Hetionet. Our Neo4j instance supports HTTP(S) and Bolt connections. The code below shows how to query Hetionet from Python using the official <code>neo4j</code> driver and the <code>py2neo</code> community driver.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre mode="cypher" class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="python" lang="python"><!--code class="python language-python"--># We use Pandas DataFrames to store tabular query results
-# However, this is an optional step for downstream convenience
-import pandas
-
-# Return 5 arbitrary diseases
-query = '''
-MATCH (disease:Disease)
-RETURN
-  disease.identifier as identifier,
-  disease.name AS name
-LIMIT 5
-'''
-
-# Uses the official neo4j-python-driver. See https://github.com/neo4j/neo4j-python-driver
-from neo4j.v1 import GraphDatabase
-driver = GraphDatabase.driver("bolt://neo4j.het.io")
-with driver.session() as session:
-    result = session.run(query)
-    result_df = pandas.DataFrame((x.values() for x in result), columns=result.keys())
-
-# Uses py2neo. See http://py2neo.org/v3/
-import py2neo
-graph = py2neo.Graph("bolt://neo4j.het.io", bolt=True, secure=True,
-    http_port=80, https_port=443, bolt_port=7687)
-cursor = graph.run(query)
-result_df = pandas.DataFrame.from_records(cursor, columns=cursor.keys())<!--/code--></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>In addition to Python, Neo4j has driver support for <a href="https://neo4j.com/developer/language-guides/">many other languages</a>.</p>
-</div>
-<div class="paragraph">
-<p>We currently limit queries to 120 seconds. If you notice that the Neo4j server is overloaded, please hold off automated queries. If you are doing a substantial amount of querying, please run the database locally (see the <a href="https://hub.docker.com/r/dhimmel/hetionet/">Hetionet Docker</a>).</p>
 </div>
 	</div>
   </div>

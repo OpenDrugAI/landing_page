@@ -1,0 +1,758 @@
+<style type="text/css" media="screen">
+/*
+.nodes-image {
+	margin:-100;
+}
+*/	
+@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
+
+.imageblock .content img {max-width: 900px;max-height: 300px;}
+.deck h3, .deck h4 {display: block !important;margin-bottom:8px;margin-top:5px;}
+.listingblock {margin:8px;}
+.pull-bottom {position:relative;bottom:1em;}
+.admonitionblock td.icon [class^="fa icon-"]{font-size:2.5em;text-shadow:1px 1px 2px rgba(0,0,0,.5);cursor:default}
+.admonitionblock td.icon .icon-note:before{content:"\f05a";color:#19407c}
+.admonitionblock td.icon .icon-tip:before{content:"\f0eb";text-shadow:1px 1px 2px rgba(155,155,0,.8);color:#111}
+.admonitionblock td.icon .icon-warning:before{content:"\f071";color:#bf6900}
+.admonitionblock td.icon .icon-caution:before{content:"\f06d";color:#bf3400}
+.admonitionblock td.icon .icon-important:before{content:"\f06a";color:#bf0000}
+</style>
+<style type="text/css" media="screen">
+#editor.maximize-editor .CodeMirror-code { font-size:24px; line-height:26px; }
+</style>
+<article class="guide" ng-controller="AdLibDataController">
+  <carousel class="deck container-fluid">
+    <!--slide class="row-fluid">
+      <div class="col-sm-3">
+        <h3>Does Nortriptyline treat migraine?</h3>
+        <p class="lead">Information</p>
+			<!dl>
+				
+				
+				<dt>author"</dt><dd>Daniel Himmelstein</dd>
+				
+				
+			</dl>
+		</div>
+      <div class="col-sm-9">
+        <figure>
+          <img style="width:300px" src=""/>
+        </figure>
+      </div>
+    </slide-->
+    
+
+
+<slide class="row-fluid">
+  <div class="col-sm-12">
+    <h3>Does Nortriptyline treat migraine?</h3>
+    <br/>
+    <div>
+      <div class="paragraph">
+<p>Project Rephetio predicted a <strong>probability of 8.615%</strong> that Nortriptyline (<a href="http://www.drugbank.ca/drugs/DB00540"><code>DB00540</code></a>) treats migraine (<a href="http://www.disease-ontology.org/?id=DOID:6364"><code>DOID:6364</code></a>). This probability represents a 22.86-fold enrichment over the background prevalence of treatment. This prediction is in the 100.0<sup>th</sup> percentile for Nortriptyline and the 99.4<sup>th</sup> percentile for migraine.</p>
+</div>
+
+
+
+   <h4>Most supportive network paths</h4>
+   <div class="paragraph">
+<p>Run the following query to show the 10 paths which contributed most to this prediction.
+Toggle <code>AUTO-COMPLETE</code> to <code>OFF</code> to only show relationships that are in these paths.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre mode="cypher"  class="highlight pre-scrollable programlisting cm-s-neo code runnable standalone-example ng-binding" data-lang="cypher" lang="cypher"><!--code class="cypher language-cypher"-->MATCH p0 = (:Compound {identifier: "DB00540"})-[:RESEMBLES_CrC]-(:Compound {identifier: "DB00321"})-[:TREATS_CtD]-(:Disease {identifier: "DOID:6364"})
+MATCH p1 = (:Compound {identifier: "DB00540"})-[:PALLIATES_CpD]-(:Disease {identifier: "DOID:1595"})-[:PALLIATES_CpD]-(:Compound {identifier: "DB00321"})-[:TREATS_CtD]-(:Disease {identifier: "DOID:6364"})
+MATCH p2 = (:Compound {identifier: "DB00540"})-[:PALLIATES_CpD]-(:Disease {identifier: "DOID:1595"})-[:PALLIATES_CpD]-(:Compound {identifier: "DB00313"})-[:TREATS_CtD]-(:Disease {identifier: "DOID:6364"})
+MATCH p3 = (:Compound {identifier: "DB00540"})-[:PALLIATES_CpD]-(:Disease {identifier: "DOID:2377"})-[:PALLIATES_CpD]-(:Compound {identifier: "DB00321"})-[:TREATS_CtD]-(:Disease {identifier: "DOID:6364"})
+MATCH p4 = (:Compound {identifier: "DB00540"})-[:BINDS_CbG]-(:Gene {identifier: 3358})-[:ASSOCIATES_DaG]-(:Disease {identifier: "DOID:6364"})
+MATCH p5 = (:Compound {identifier: "DB00540"})-[:BINDS_CbG]-(:Gene {identifier: 3350})-[:ASSOCIATES_DaG]-(:Disease {identifier: "DOID:6364"})
+MATCH p6 = (:Compound {identifier: "DB00540"})-[:BINDS_CbG]-(:Gene {identifier: 6532})-[:ASSOCIATES_DaG]-(:Disease {identifier: "DOID:6364"})
+MATCH p7 = (:Compound {identifier: "DB00540"})-[:PALLIATES_CpD]-(:Disease {identifier: "DOID:2377"})-[:PALLIATES_CpD]-(:Compound {identifier: "DB00996"})-[:TREATS_CtD]-(:Disease {identifier: "DOID:6364"})
+MATCH p8 = (:Compound {identifier: "DB00540"})-[:BINDS_CbG]-(:Gene {identifier: 3356})-[:ASSOCIATES_DaG]-(:Disease {identifier: "DOID:6364"})
+MATCH p9 = (:Compound {identifier: "DB00540"})-[:RESEMBLES_CrC]-(:Compound {identifier: "DB00768"})-[:RESEMBLES_CrC]-(:Compound {identifier: "DB00321"})-[:TREATS_CtD]-(:Disease {identifier: "DOID:6364"})
+RETURN [p0, p1, p2, p3, p4, p5, p6, p7, p8, p9]<!--/code--></pre>
+</div>
+</div>
+
+
+
+   <h4>Is this a known treatment?</h4>
+   <div class="paragraph">
+<p><a href="https://doi.org/10.15363/thinklab.d182">PharmacotherapyDB v1.0</a> does not contain an indication between Nortriptyline and migraine. ClinicalTrials.gov contains 1 clinical trials investigating whether Nortriptyline treats migraine (<a href="https://clinicaltrials.gov/ct2/show/NCT02169830"><span class="small">NCT02169830</span></a>).</p>
+</div>
+	</div>
+  </div>
+</slide>
+
+
+
+<slide class="row-fluid">
+  <div class="col-sm-12">
+    <h3>Contribution by path</h3>
+    <br/>
+    <div>
+      <div class="paragraph">
+<p>Which paths provided the most support for this prediction? The following table shows the percent contribution of each path. The number of reported paths is limited to 25.</p>
+</div>
+<table class="tableblock frame-all grid-all spread table-striped table-bordered text-center">
+<colgroup>
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 55.5556%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Percent of Prediction</th>
+<th class="tableblock halign-left valign-top">Percent of DWPC</th>
+<th class="tableblock halign-left valign-top">Metapath</th>
+<th class="tableblock halign-left valign-top">Length</th>
+<th class="tableblock halign-left valign-top">Verbose Path</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24.20%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100.00%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.95%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32.70%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CpDpCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–palliates–endogenous depression–palliates–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.06%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27.80%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CpDpCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–palliates–endogenous depression–palliates–Valproic Acid–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.38%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24.10%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CpDpCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–palliates–multiple sclerosis–palliates–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.27%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">29.10%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGaD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–HTR2C–associates–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.15%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">28.30%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGaD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–HTR1A–associates–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.54%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24.10%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGaD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–SLC6A4–associates–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.82%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15.50%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CpDpCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–palliates–multiple sclerosis–palliates–Gabapentin–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.72%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18.50%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGaD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–HTR2A–associates–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.59%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9.10%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Olopatadine–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.48%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8.44%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Epinastine–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.22%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.96%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Indecainide–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.22%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.96%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Azatadine–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.15%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.58%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Phenindamine–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.00%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.69%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Cyproheptadine–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.00%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.69%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Mianserin–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.95%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.41%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Indecainide–resembles–Propranolol–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.95%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.41%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Demexiptiline–resembles–Propranolol–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.83%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.11%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGbCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–HTR6–binds–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.81%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.97%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGbCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–ORM1–binds–Propranolol–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.80%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.88%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGbCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–CHRM4–binds–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.78%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.77%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGbCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–CHRM5–binds–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.77%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.37%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Doxepin–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.73%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.47%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGbCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–binds–ADRA1D–binds–Amitriptyline–treats–migraine</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.72%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.11%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline–resembles–Oxcarbazepine–resembles–Amitriptyline–treats–migraine</p></td>
+</tr>
+</tbody>
+</table>
+	</div>
+  </div>
+</slide>
+
+
+
+<slide class="row-fluid">
+  <div class="col-sm-12">
+    <h3>Contribution by metapath</h3>
+    <br/>
+    <div>
+      <div class="paragraph">
+<p>Which types of paths provided the most support for this prediction? The following table shows the percent contribution of each metapath.</p>
+</div>
+<table class="tableblock frame-all grid-all spread table-striped table-bordered text-center">
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 12.5%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Metapath</th>
+<th class="tableblock halign-left valign-top">Percent of Prediction</th>
+<th class="tableblock halign-left valign-top">Path Count</th>
+<th class="tableblock halign-left valign-top">Length</th>
+<th class="tableblock halign-left valign-top">Verbose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24.20%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–resembles–Compound–treats–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CpDpCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18.21%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–palliates–Disease–palliates–Compound–treats–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCrCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17.50%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–resembles–Compound–resembles–Compound–treats–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGbCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16.30%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">49</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–binds–Gene–binds–Compound–treats–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGaD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14.69%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–binds–Gene–associates–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CcSEcCtD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.68%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">530</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–causes–Side Effect–causes–Compound–treats–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGpPWpGaD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.06%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,503</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–binds–Gene–participates–Pathway–participates–Gene–associates–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CbGeAlD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.20%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">122</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–binds–Gene–expresses–Anatomy–localizes–Disease</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">CrCbGaD</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.16%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">57</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compound–resembles–Compound–binds–Gene–associates–Disease</p></td>
+</tr>
+</tbody>
+</table>
+	</div>
+  </div>
+</slide>
+
+
+
+<slide class="row-fluid">
+  <div class="col-sm-12">
+    <h3>Contribution by source edge</h3>
+    <br/>
+    <div>
+      <div class="paragraph">
+<p>The source edge of a path refers to its first edge. The following table shows the total contribution of each source edge across all paths. The number of displayed edges is limited to 25.</p>
+</div>
+<table class="tableblock frame-all grid-all spread table-striped table-bordered text-center">
+<colgroup>
+<col style="width: 57.1428%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Source Edge</th>
+<th class="tableblock halign-left valign-top">Percent of Prediction</th>
+<th class="tableblock halign-left valign-top">Path Count</th>
+<th class="tableblock halign-left valign-top">Distinct Metapaths</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Amitriptyline</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24.21%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—palliates—endogenous depression</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11.01%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—palliates—multiple sclerosis</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7.20%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—HTR1A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.43%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">107</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—HTR2C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5.06%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">107</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—SLC6A4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.67%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—HTR2A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.84%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">130</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Indecainide</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.17%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Olopatadine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.59%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—ORM1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.52%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Epinastine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.49%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—HTR6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.27%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">108</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Azatadine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.22%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Phenindamine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.15%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—CYP2C19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.14%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—CHRM4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.04%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—CHRM5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.02%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">108</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Mianserin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.02%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Cyproheptadine</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.01%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—ADRA1D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.97%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">111</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Demexiptiline</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.95%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—CYP3A5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.92%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—resembles—Doxepin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.78%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—ADRA1B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.73%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">109</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nortriptyline—binds—SLC6A2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.73%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+</tbody>
+</table>
+	</div>
+  </div>
+</slide>
+
+
+
+<slide class="row-fluid">
+  <div class="col-sm-12">
+    <h3>Contribution by target edge</h3>
+    <br/>
+    <div>
+      <div class="paragraph">
+<p>The target edge of a path refers to its last edge. The following table shows the total contribution of each target edge across all paths. The number of displayed edges is limited to 25.</p>
+</div>
+<table class="tableblock frame-all grid-all spread table-striped table-bordered text-center">
+<colgroup>
+<col style="width: 57.1428%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Target Edge</th>
+<th class="tableblock halign-left valign-top">Percent of Prediction</th>
+<th class="tableblock halign-left valign-top">Path Count</th>
+<th class="tableblock halign-left valign-top">Distinct Metapaths</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—treats—Amitriptyline</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">62.94%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">156</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—treats—Valproic Acid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6.58%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">82</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—treats—Propranolol</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.99%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">46</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—HTR2C</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.58%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">136</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—HTR1A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4.44%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">121</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—SLC6A4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.58%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">17</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—treats—Gabapentin</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3.24%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">92</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—HTR2A</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2.93%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">144</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—treats—Verapamil</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1.69%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">68</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—treats—Topiramate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.78%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—treats—Timolol</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.67%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">60</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—HTR2B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.57%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">141</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—HTR1D</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.53%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">124</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—HTR1B</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.32%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">122</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—HTR7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.29%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">130</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—localizes—trigeminal nucleus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.14%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—localizes—nervous system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.12%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—localizes—locus ceruleus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.12%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—localizes—head</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.11%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—localizes—central nervous system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.11%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—EDNRA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.10%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">108</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—localizes—sympathetic nervous system</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.09%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—localizes—brain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.09%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—CALCRL</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.09%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">58</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">migraine—associates—RAMP1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0.09%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">58</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+</tbody>
+</table>
+	</div>
+  </div>
+</slide>
+  </carousel>
+</article>
